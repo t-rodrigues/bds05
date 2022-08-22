@@ -26,7 +26,7 @@ public class AuthServiceImpl implements AuthService {
     }
 
     @SelfOrAdmin
-    private void validateSelfOrAdmin(Long id) {
+    private void validateSelfOrAdmin(Long userId) {
 
     }
 

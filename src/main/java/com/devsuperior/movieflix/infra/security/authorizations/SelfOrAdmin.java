@@ -9,5 +9,5 @@ import org.springframework.security.access.prepost.PreAuthorize;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-@PreAuthorize(value = "hasRole('ADMIN') || #id == authentication.id")
+@PreAuthorize(value = "hasRole('ADMIN') || #userId == authentication.id")
 public @interface SelfOrAdmin {}
